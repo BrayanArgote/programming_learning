@@ -33,5 +33,4 @@ if (flag)
     Console.WriteLine("No repeated letters");
 }
 
-
 Console.ReadKey();
