@@ -69,9 +69,8 @@ class Program
                     }
                     else
                     {
-                        Console.WriteLine("*** Item was not found ***");
+                        Console.WriteLine($"*** {typeItem} don't exits ***");
                     }
-
                         break;
 
                 case "2":
@@ -79,7 +78,7 @@ class Program
                     Console.Write("Enter the number of the item to eliminate: ");
                     index = Convert.ToInt32(Console.ReadLine());
 
-                    if (index >= 0 && index < l.objects.Count)
+                    if (index >= 0 && index < l.Objects.Count)
                     {
                         l.DeleteItem(index);
                         Console.WriteLine($"-- Item with the idex {index} was deleted --");
@@ -92,7 +91,7 @@ class Program
 
                 case "3":
                     Console.WriteLine("=== Items ===");
-                    if (l.objects.Count == 0)
+                    if (l.Objects.Count == 0)
                     {
                         Console.WriteLine("*** There are no items ***");
                     }
