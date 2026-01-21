@@ -3,7 +3,7 @@
     private string author;
     public string Author {
         get { return author; }
-        set { if (!string.IsNullOrEmpty(value)) { author = value; } }
+        set { if (!string.IsNullOrEmpty(value)) { author = value; } else { author = "unknown"; } }
     }
 
 }

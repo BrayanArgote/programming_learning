@@ -16,9 +16,10 @@ class Program
     static void Main(string[] args)
     {
         string option;
-;        do
+        Library l = new Library();
+       do
         {
-            Console.WriteLine("\n======= MENU =======" +
+            Console.WriteLine("\n========= MENU =========" +
                               "\n1. Add item. " +
                               "\n2. Remove item. " +
                               "\n3. List items. " +
@@ -30,7 +31,7 @@ class Program
             {
                 case "1":
                     string typeItem;
-                    Console.WriteLine("What item do you want to add?");
+                    Console.WriteLine("What item do you want to add? ");
                     typeItem = Console.ReadLine().ToLower();
 
                     if (typeItem == "book")
@@ -39,13 +40,15 @@ class Program
                         Console.Write("Enter a title: ");
                         b.Title = Console.ReadLine();
 
-                        Console.Write("Enter a title: ");
+                        Console.Write("Enter a year of publication: ");
                         b.PublicationYear = Convert.ToInt32(Console.ReadLine());
 
-                        Console.Write("Enter a title: ");
+                        Console.Write("Enter author: ");
                         b.Author = Console.ReadLine();
 
+                        l.AddItem(b);
 
+                        Console.WriteLine("-- A BOOK was added --");
                     }
 
                     else if (typeItem == "magazine")
@@ -54,11 +57,15 @@ class Program
                         Console.Write("Enter a title: ");
                         m.Title = Console.ReadLine();
 
-                        Console.Write("Enter a title: ");
+                        Console.Write("Enter a year of publication: ");
                         m.PublicationYear = Convert.ToInt32(Console.ReadLine());
 
-                        Console.Write("Enter a title: ");
+                        Console.Write("Enter a issue number: ");
                         m.IssueNumber = Console.ReadLine();
+
+                        l.AddItem(m);
+
+                        Console.WriteLine("-- A MAGAZINE was added --");
                     }
                     else
                     {
@@ -66,8 +73,35 @@ class Program
                     }
 
                         break;
-                case "2": break;
-                case "3": break;
+
+                case "2":
+                    int index;
+                    Console.Write("Enter the number of the item to eliminate: ");
+                    index = Convert.ToInt32(Console.ReadLine());
+
+                    if (index >= 0 && index < l.objects.Count)
+                    {
+                        l.DeleteItem(index);
+                        Console.WriteLine($"-- Item with the idex {index} was deleted --");
+                    }
+                    else
+                    {
+                        Console.WriteLine("*** Index was not found ***");
+                    }
+                        break;
+
+                case "3":
+                    Console.WriteLine("=== Items ===");
+                    if (l.objects.Count == 0)
+                    {
+                        Console.WriteLine("*** There are no items ***");
+                    }
+                    else
+                    {
+                        l.ShowItems();
+                    }
+                    break;
+
                 case "4": Console.WriteLine("Exiting..."); break;
                 default: Console.WriteLine("*** Invalid option ***"); break;
             }

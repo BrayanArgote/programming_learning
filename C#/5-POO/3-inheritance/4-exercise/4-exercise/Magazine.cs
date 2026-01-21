@@ -4,7 +4,7 @@
     public string IssueNumber
     {
         get { return issueNumber; }
-        set { if (!string.IsNullOrEmpty(value)) { issueNumber = value; } }
+        set { if (!string.IsNullOrEmpty(value)) { issueNumber = value; } else { issueNumber = "00-000"; } }
     }
 }
   
