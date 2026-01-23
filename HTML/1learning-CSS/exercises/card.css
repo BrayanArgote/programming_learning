@@ -1,0 +1,28 @@
+body{
+    background-color:black;
+    color:white
+}
+
+#card{
+    background-color:lightskyblue;
+    text-align:center;
+    margin:auto;
+    margin-top:20px;
+    width:400px;
+
+}
+
+#name{
+    font-size:45px;
+    margin:0
+}
+
+#ocupation{
+    letter-spacing:2px
+}
+
+#about{
+    background-color:lightgreen;
+    padding:20px 30px;
+    text-align:justify
+}

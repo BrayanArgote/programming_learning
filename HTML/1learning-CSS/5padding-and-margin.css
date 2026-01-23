@@ -1,0 +1,16 @@
+h1{
+    text-align:center;
+    font-size:40px;
+    font-family: monospace;
+}
+
+h2{
+    text-align:center
+}
+
+#box{
+    background-color:lightblue;
+    width:200px;
+    padding:50px;
+    margin:20px 600px
+}

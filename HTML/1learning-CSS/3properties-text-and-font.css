@@ -1,0 +1,60 @@
+#title{
+    color:blue;
+    font-family:sans-serif;
+    font-size:50px;
+    font-weight:900;
+    text-align:center
+}
+
+h2{
+    font-size:25px;
+    font-weight:bolder
+}
+
+p{
+    font-size:20px
+}
+
+.first{
+    text-align:end;
+    color:red
+}
+
+.second{
+    text-align:center;
+    color:orange;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-weight:900px
+}
+
+.third{
+    text-align:start;
+    color:rgba(255, 255, 0, 0.638)
+}
+
+#fourth-title{
+    color: green;
+    text-align:center;
+    text-decoration: underline;
+    letter-spacing: 3px;
+}
+
+.fourth{
+    color: greenyellow;
+    text-align:left;
+    font-family:'Franklin Gothic Medium';
+    font-style: italic;
+}
+
+span{
+    color:green;
+    font-weight: bolder;
+}
+
+a{
+    color:aqua;
+    text-decoration: none;
+    font-size:50px;
+    letter-spacing: 260px;
+    
+}

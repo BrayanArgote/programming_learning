@@ -1,0 +1,14 @@
+/* type selector */
+li{
+    color:blueviolet;
+}
+
+/* class selector */
+.head{
+    color:green
+}
+
+/* id selector*/
+#feet{
+    color:brown
+}

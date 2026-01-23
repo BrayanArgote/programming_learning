@@ -1,0 +1,29 @@
+div{
+    background-color:bisque;
+    width:700px;
+    height:450px;
+}
+
+ul{
+    height:100%
+}
+
+li{
+    font-size:50px;
+    width:100%;
+    text-align: center;
+    height:33.3333%;
+
+}
+
+#yellow{
+    background-color: yellow;
+}
+
+#blue{
+    background-color: blue;
+}
+
+#red{
+    background-color: red;
+}
