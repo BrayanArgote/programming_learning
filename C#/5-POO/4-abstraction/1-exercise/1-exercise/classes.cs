@@ -1,51 +1,66 @@
-﻿abstract class Payment
+﻿abstract class Appliance
 {
-    private double amount;
-    public double Amount
+    private string name;
+    public string Name
     {
-        get { return amount; }
-        set { if (value > 0) { amount = value; } }
-    }
-    public abstract string Pay();
-}
-
-
-class CredditCarPayment : Payment
-{
-    public override void Pay()
-    {
-        int numberAcount;
-        double inputAmount;
-        Console.Write("Enter the number of the account: ");
-        numberAcount =  Convert.ToInt32(Console.ReadLine());
-
-        if (numberAcount == 5)
+        get { return name; }
+        set
         {
-            Console.Write("Enter a type of coin (USD - COP): ");
-            inputAmount = Convert.ToDouble(Console.ReadLine());
-            Amount = inputAmount;
-
-            return $"-- You pay {inputAmount} --";
+            if (!string.IsNullOrEmpty(value)) { name = value; }
+            else { name = "unknown"; }
         }
-        else { Console.WriteLine("*** Please type a valid account number (five digits) ***"); }
+    }
+        
+    private double power;
+    public double Power
+    {
+        get { return power; }
+        set { 
+            if (value > 0) { power = value; }
+            else { power = 0; } }
+    }
+
+    public Appliance(string name, int power)
+    {
+        Name = name;
+        Power = power;
+    }
+    public abstract string TurnOn();
+}
+
+class WashingMachine : Appliance
+{
+    public WashingMachine(string name, int power) : base(name, power) { }
+    public override string TurnOn()
+    {
+        double amountWater, amountSoap;
+
+        Console.Write("Enter the amount of water: ");
+        amountWater = Convert.ToDouble(Console.ReadLine());
+        Console.Write("Enter the soap: ");
+        amountSoap = Convert.ToDouble(Console.ReadLine());
+
+        if (amountWater > 0 && amountSoap > 0)
+        {
+            return "== Turning on the washing machine ==";
+        }
+        else
+        {
+            return "*** Failded to turn on the washing machine ***";
+        }
     }
 }
 
-class CryptoPayment : Payment
+
+class Fan : Appliance
 {
-    public override void Pay(double amount)
+    public Fan(string name, int power) : base(name, power) { }
+    public override string TurnOn()
     {
-        string inputWalletAddress;
-        bool correctWallet;
-        Console.Write("Enter a wallet address: ");
-        inputWalletAddress = Console.ReadLine();
+        int speed;
+        Console.Write("Enter the speed (1 - 2 - 3 - 4 - 5): ");
+        speed = Convert.ToInt32(Console.ReadLine());
 
-        Console.Write($"Is that {inputWalletAddress} wallet address correct? (true-false): ");
-        correctWallet = Convert.ToBoolean(Console.ReadLine());
-
-        if()
-
-
+        return "=== Turning on the fan ===";
     }
-
 }
