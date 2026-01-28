@@ -1,10 +1,10 @@
 ﻿/*
 Create a class Character with properties: Name, Health.
-Add a virtual method Attack() that prints "Normal attack".
+Add a virtual method Attack()".
 
 Create Warrior and Healer classes.
 Warrior.Attack() uses override.
-Healer.Attack() uses new.
+Healer.Attack() uses new or overloading.
 
 Optional: add a conditional inside Attack based on health.
 Store all characters in a list of Character.

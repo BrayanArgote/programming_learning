@@ -21,10 +21,10 @@
 
     public virtual void Attack()
     {
-        if (health > 60)
+        if (Health > 60)
         {
-            Console.WriteLine($"\n****Attack***** \nDamage+{health * 2}");
+            Console.WriteLine($"\n****Attack***** \nDamage+{Health * 2}");
         }
-        else { Console.WriteLine($"\n****Attack**** \nDamage +{health * 1}"); }
+        else { Console.WriteLine($"\n****Attack**** \nDamage +{Health * 1}"); }
     }
 }
