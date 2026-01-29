@@ -13,7 +13,7 @@
 
     public string Read()
     {
-        return $"Showing {Title}... \n you are reading it now";
+        return $"Showing {Title}... \nYou are reading it now";
     }
 
     public void Summarize()

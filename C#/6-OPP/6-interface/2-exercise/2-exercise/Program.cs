@@ -22,7 +22,7 @@
                                   "\n1. Show books. " +
                                   "\n2. Add a book. " +
                                   "\n3. Read a book. " +
-                                  "\n4. Leavea a main ideas (only non fiction books). " +
+                                  "\n4. Add main ideas (only non-fiction books). " +
                                   "\n5. Exit. ");
                 Console.Write("Enter the Option: ");
                 option = Console.ReadLine().Trim();
@@ -58,7 +58,7 @@
                     case "2":
 
                         string inputTypeBook;
-                        Console.Write("Enter the type of the book that you want to add (Fiction - NonFiction): ");
+                        Console.Write("Enter the type of the book that you want to add (Fiction - Non-Fiction): ");
                         inputTypeBook = Console.ReadLine().Trim();
                         Type t = Type.GetType(inputTypeBook);
 
@@ -74,7 +74,7 @@
                             books.Add(book);
                             Console.WriteLine($"--- The {t} book with title *{title}* was add ---");
                         }
-                        else { Console.WriteLine($"*** {inputTypeBook} don't exits ***"); }
+                        else { Console.WriteLine($"*** {inputTypeBook} doesn't exits ***"); }
                         break;
 
                     case "3":
@@ -95,7 +95,7 @@
                         }
                         if (!flag)
                         {
-                            Console.WriteLine($"*** There's no a book with the title *{inputTitle}* ***");
+                            Console.WriteLine($"*** There's no book with the title *{inputTitle}* ***");
                         }
                         break;
 
@@ -108,16 +108,16 @@
                         if (exists != null && exists is NonFiction n)
                         {
                             n.Summarize();
-                            Console.WriteLine($"-- Main ideas was added to *{n.Title}* --");
+                            Console.WriteLine($"-- Main ideas were added to *{n.Title}* --");
                         }
                         
-                        else { Console.WriteLine($"*** Non Fiction Book with the title *{inputTitleMainIdea}* was not found ***"); }
+                        else { Console.WriteLine($"*** Non-Fiction Book with the title *{inputTitleMainIdea}* was not found ***"); }
 
                         break;
                     
 
                     case "5": Console.WriteLine("Exiting... "); break;
-                    default: Console.WriteLine("*** Please type a vaid option ***"); break;
+                    default: Console.WriteLine("*** Please type a valid option ***"); break;
                 }
             }
             while (option != "5");

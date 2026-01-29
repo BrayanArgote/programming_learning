@@ -83,7 +83,6 @@ namespace _2_exercise.Controllers
             users.Add(json);
             return Created("", json);
 
-            Console.WriteLine(json.Name);
         }
 
         [HttpGet]
