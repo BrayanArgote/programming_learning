@@ -3,7 +3,7 @@ body{
     color:white
 }
 
-#card{
+div{
     background-color:lightskyblue;
     text-align:center;
     margin:auto;
@@ -12,16 +12,16 @@ body{
 
 }
 
-#name{
+h1{
     font-size:45px;
     margin:0
 }
 
-#ocupation{
+h2{
     letter-spacing:2px
 }
 
-#about{
+p{
     background-color:lightgreen;
     padding:20px 30px;
     text-align:justify

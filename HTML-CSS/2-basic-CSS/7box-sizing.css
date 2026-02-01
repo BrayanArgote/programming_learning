@@ -1,0 +1,25 @@
+body{
+    margin:0
+}
+
+h2{
+    margin:30px 20px
+}
+
+div{
+    background-color:blueviolet;
+    width:100px;
+    height:100px;
+    margin:20px
+}
+
+.box-default{
+    border: 20px solid yellow;
+    padding: 10px
+}
+
+#with-border-box{
+    box-sizing: border-box;
+    border:20px solid yellow;
+    padding: 10px
+}

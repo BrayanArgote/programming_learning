@@ -1,0 +1,41 @@
+
+.title{
+    text-align: center;
+    font-size:50px;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    letter-spacing: 6px;
+    background-color:rgb(255, 255, 255);
+    border:8px solid lightblue;
+    padding: auto;
+    width:310px;
+    margin:auto
+}
+
+div{
+    background-color:red;
+    text-align: center;
+    padding:3px;
+    width:200px;
+    margin: auto;
+    margin-top:10px
+}
+
+.border-box-one{
+    border-Width: 18px;
+    border-style: solid;
+    border-color: black;
+    border-radius: 10px;
+}
+
+.border-box-two{
+    border: 15px solid gray;
+    border-radius: 50% 8%
+}
+
+#border-box-three{
+    border-width: 8px;
+    border-style:dashed;
+    border-color:orange;
+    border-radius: 50px;
+}
+

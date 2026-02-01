@@ -1,0 +1,44 @@
+.card-v2{
+    width:320px;
+    background-color: #7e0;
+    text-align:center;
+    border-radius:5px;
+    color:#fff;
+    margin:auto;
+    margin-top:40px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    box-sizing:border-box;
+    box-shadow:0 0 45px #1117
+}
+
+.card-orange{
+    background-color: #FF991D;
+}
+
+.card-purple{
+    background-color: #991DFF;
+}
+
+.card-image{
+    margin-top:20px;
+    width: 40%;
+    border-radius:10px;
+}
+
+.card-name{
+    margin:0px;
+    text-transform:uppercase;
+}
+
+.card-profession{
+    font-size:15px;
+    letter-spacing:3px;
+    margin:0px;
+    text-transform: uppercase;
+}
+
+.card-content{
+    padding: 20px;
+    text-align:justify;
+    font-size:11px
+}

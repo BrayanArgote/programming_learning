@@ -1,0 +1,25 @@
+div{
+    width:480px;
+    height:160px;
+    box-sizing: border-box;
+    margin:30px;
+    text-align:center;
+    font-family:Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight:bold;
+    font-size:35px;
+    padding:5px
+}
+
+.box-rbg{
+    background-color: rgb(150, 100, 200);
+    border-radius:10px;
+    border-top: 10px solid rgb(0, 0, 0);
+    color: rgba(205, 90, 250, 10)
+}
+
+.box-hex{
+    border-bottom: 10px dashed #111;
+    border-radius: 10%;
+    background-color: #aaf;
+    color: #ddf
+}

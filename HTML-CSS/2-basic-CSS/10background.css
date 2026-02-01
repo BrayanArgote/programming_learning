@@ -1,0 +1,17 @@
+body{
+    background-color:#cde
+}
+
+div{
+    background-image: url('https://www.elespectador.com/resizer/v2/A7TE2XK6CVCK3PWCI3JNE57IAU.jpg?auth=a9724b8a5a79ee80f538fc7bbd232fdb392e4bc7dd867d4910dcd12c2d08dbb8&width=920&height=613&focal=1925,975&quality=60');
+    width:100vw;
+    height:100vh;
+    background-position:center;
+    background-repeat:no-repeat; 
+    background-size:contain;
+    background-attachment:fixed
+}
+
+p{
+    font-size:100px;
+}
