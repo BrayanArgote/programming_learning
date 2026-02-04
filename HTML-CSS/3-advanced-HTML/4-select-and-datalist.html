@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Select</title>
+        <link rel="stylesheet" href="4-select-and-datalist.css">
+    </head>
+
+    <body>
+        <form>
+            <h2>Form Contact</h2>
+
+            <div>
+                <label>Name
+                    <input placeholder="Juan Gonzales" type="text">
+                </label>
+            </div>
+
+            <div>
+                <label>Email
+                    <input placeholder="example@gmail.com" type="email"> 
+                </label>
+            </div>
+
+            <!-- SELECT and OPTION -->
+            <div>
+                <label> Type of user
+                    <select>
+                        <option value="user01">Administrador</option>
+                        <option value="user02">Customer</option>
+                        <option value="user03">Sales person</option>
+                    </select>
+                </label>
+                
+            </div>
+
+            <div>
+                <label> Comment
+                    <textarea rows="4" placeholder="Leave your comment"></textarea>
+                </label>
+            </div>
+
+            <!-- DATALIST and OPTION -->
+            <div>
+                <label> Reffer
+                    <input list="reffer">
+                    <datalist id="reffer">
+                        <option value="Follower">A fan</option>
+                        <option value="Youtuber"></option>
+                        <option value="Friend">Also parents</option>
+                    </datalist>
+                </label>
+            </div>
+
+            <div>
+                <label>Accept terms and conditions
+                    <input class="checkbox" type="checkbox">
+                </label>
+            </div>
+
+        </form>
+    </body>
+
+
+</html>

@@ -1,0 +1,45 @@
+body{
+    background-color:#8fd6;
+    font-family: sans-serif
+}
+
+h1{
+    font-size:35px;
+    text-align:center;
+    margin-top:60px;
+    letter-spacing:3px;
+    color:#111;
+    font-weight:900;
+    margin-bottom:5px
+}
+
+
+form{
+    margin:auto;
+    padding:35px;
+    width:450px;
+    background-color:#fff;
+    border-radius:8px;
+    box-shadow:0 0 10px 2px #1113
+}
+
+label{
+    font-size:0.8rem
+}
+
+input, select{
+    width:97%;
+    padding:7px;
+    margin:5px 0;
+    margin-bottom:15px;
+    border-radius:5px;
+    border:2px solid #ccc
+}
+
+.checkbox{
+    width:auto;
+}
+
+a{
+    text-decoration:none;
+}

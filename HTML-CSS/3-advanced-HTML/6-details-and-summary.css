@@ -1,0 +1,26 @@
+body{
+    font-family: Haettenschweiler, 'Arial Narrow Bold', sans-serif
+}
+
+
+h1{
+    text-align:center;
+    letter-spacing:4px
+}
+
+details{
+    border: 1px solid #333;
+    margin:20px;
+    padding: 5px;
+    box-shadow:0 0 10px 1px #2224
+}
+
+summary{
+    font-size:0.9em;
+    font-weight:100;
+    color:#222
+}
+
+li, h5{
+    font-weight:600
+}

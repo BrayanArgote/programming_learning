@@ -1,0 +1,56 @@
+body{
+    background-color:#111;
+    color:#eee;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
+
+}
+
+form{
+    width: 300px;
+    margin:auto;
+    margin-top:50px;
+    border-radius:5px;
+    box-shadow: 0 0 10px #eee;
+    background-color:transparent;
+    box-sizing:border-box;
+    padding:20px
+}
+
+h2{
+    text-transform:uppercase;
+    text-align:center;
+    margin-top:0;
+    margin-bottom:33px;
+    letter-spacing:2px
+}
+
+input, textarea, select{
+    width:97%;
+    background-color:transparent;
+    border-radius:3px;
+    border:1px solid #eee6;
+    padding:5px;
+    margin:10px 0;
+    margin-bottom:20px;
+    color:#fff
+}
+
+label{
+    font-size: 0.9rem
+}
+
+select{
+    background-color:#111;
+    width: 101.5%;
+}
+
+textarea{
+    min-width:97%;
+    resize:none
+}
+
+.checkbox{
+    margin-top:20px;
+    width:auto
+}
+

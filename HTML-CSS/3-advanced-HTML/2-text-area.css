@@ -1,0 +1,36 @@
+body{
+    background-color:#111
+}
+
+
+h2{
+    text-transform:uppercase;
+    text-align:center;
+    margin-top:0px
+}
+
+form{
+    background-color:transparent;
+    color:#eee;
+    padding:15px;
+    box-shadow: 0 0 10px #fff6;
+    width:400px;
+    margin:auto;
+    margin-top:50px;
+    border-radius:3px
+}
+
+.input-form, .input-textarea{
+    margin:5px;
+    padding:5px;
+    width:95%;
+    background-color:transparent;
+    border:1px solid #eee6;
+    border-radius:3px;
+    color:#eee
+}
+
+.input-textarea{
+    min-width:95%;
+    resize:none
+}
