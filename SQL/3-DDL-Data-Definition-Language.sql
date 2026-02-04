@@ -1,0 +1,3 @@
+CREATE DATABASE test
+
+DROP DATEBASE test
