@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tables</title>
+    <link rel="stylesheet" href="8-tables.css">
+</head>
+
+<body>
+    <h2>Basic Table</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Product</th>
+                <th>Quantity</th>
+                <th>Price</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td>Eggs</td>
+                <td>100</td>
+                <td>$ 400 Unidad</td>
+            </tr>
+            <tr>
+                <td>Apple</td>
+                <td>20</td>
+                <td>$ 2000 Unidad</td>
+            </tr>
+            <tr>
+                <td>Bag milk</td>
+                <td>5</td>
+                <td>$ 5000 Unidad</td>
+            </tr>
+            <tr>
+                <td>Carrot</td>
+                <td>20</td>
+                <td>$ 500 Unidad</td>
+            </tr>
+        </tbody>
+
+        <tfoot>
+            <tr>
+                <th>Total</th>
+                <th colspan="2">$ 115000</th>
+            </tr>
+        </tfoot>
+
+    </table>
+
+    <h2>Table with Styles</h2>
+    <table class="table-style">
+        <thead>
+            <tr>
+                <th class="th-style">Product</th>
+                <th class="th-style">Quantity</th>
+                <th class="th-style">Price</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td class="td-style">Orange</td>
+                <td class="td-style">5</td>
+                <td class="td-style">$ 600 Unidad</td>
+            </tr>
+            <tr>
+                <td class="td-style">Grape</td>
+                <td class="td-style">200</td>
+                <td class="td-style">$ 20 Unidad</td>
+            </tr>
+            <tr>
+                <td class="td-style">Strawberry</td>
+                <td class="td-style">100</td>
+                <td class="td-style">40 Unidad</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <th class="th-style th-total" >Total</th>
+            <th class="th-style th-total"  colspan="2">$ 11000</th>
+        </tfoot>
+    </table>
+</body>
+
+</html>

@@ -1,0 +1,33 @@
+/* SELECTOR: attribute with the same value */
+img[src ="image.png"]{
+    width:300px;
+}
+
+/* SELECTOR: attribute value ends with...*/
+img[src$=".png"]{
+    width: 400px;
+}
+
+/* SELECTOR: attribute value starts with.. */
+img[src^="https:"]{
+    width:470px;
+}
+
+/* SELECTOR: element inside another element */
+ul li{
+    color: #540;
+}
+
+/* SELECTOR: element inside another element but as child*/
+ul > strong{
+    color:#070
+}
+
+/* SELECTOR: one adjacent element (next element) */
+h1 + p{
+    color:#777
+}
+
+h1 ~ p{
+    color:#a59
+}
