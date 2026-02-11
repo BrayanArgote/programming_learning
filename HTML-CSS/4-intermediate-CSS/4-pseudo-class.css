@@ -1,0 +1,86 @@
+h2{
+    background-color:#426a;
+    width:100px;
+    margin:auto;
+    margin-top:30px;
+    text-align:center;
+    padding:7px;
+    border-radius:3px
+}
+
+li{
+    margin:14px;
+    font-family:sans-serif;
+    font-weight:bolder;
+    color:#111
+}
+
+h3{
+    font-size:27px;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    letter-spacing:3px;
+    margin-top:50px
+}
+
+/* when the mouse is over the element */
+.hover:hover{
+    width:110px;
+    height:30px
+}
+
+/* when the user clicks on the element */
+.active:active{
+    background-color:#424;
+    color:white
+}
+
+/* select the first element */
+.first-li:first-child{
+    color:#F00
+}
+
+/* select last element */
+.first-li:last-child{
+    color:#0F0
+}
+
+/* select any element */
+.first-li:nth-child(5){
+    color:#9a0
+}
+
+/* select elements based on a pattern (every 3rd item) */
+.first-li:nth-child(3n){
+    color:#aaf
+}
+
+/* exclude elements */
+.ul-exclude li:not(.li-exclude){
+    color:#88a
+}
+
+
+div{
+    background-color:#5555;
+    padding: 30px;
+    border: 2px solid #222;
+    margin: 10px;
+    text-align: justify;
+}
+
+/* selects empty elements, used to hide that element */
+div:empty {
+    border:none;
+    margin:auto;
+    background-color:inherit
+}
+
+/* select links that are not visited */
+a:link{
+    color:#e00
+}
+
+/* select links visited */
+a:visited{
+    color:#0e0
+}

@@ -1,0 +1,50 @@
+body{
+    background-color: #111c;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+h1{
+    font-size:60px;
+    text-align:center;
+    text-transform:capitalize;
+    letter-spacing: 3px;
+    margin:20px
+}
+
+form{
+    width:400px;
+    border: 1px solid #eee;
+    border-radius:4px;
+    padding:25px;
+    margin:auto
+}
+
+/* INHERIT: gets the property from the parent element*/
+input{
+    font-family:inherit;
+    background:transparent;
+    width:97%;
+    margin-bottom: 15px;
+    margin-top:4px;
+    border-radius:5px;
+    padding: 5px;
+
+}
+
+/* INITIAL: resets the property to the browser value */
+textarea{
+    font-family:initial;
+    background:transparent;
+    border-radius:5px;
+    margin-top:4px;
+    resize:none;
+    min-width:98%
+}
+
+
+/*REVERT: its similar to initial */
+
+/*UNSET: removes the set value, inherit if is posible, otherwise uses the initial (browser) value*/
+
+
+

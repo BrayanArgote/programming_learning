@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Is, Has and Where</title>
+    <style>
+        /*  :is() is used to select several elements in an organiaze way*/
+        ul li:is(.f-element, .s-element){
+            font-weight:bolder;
+            color:#559
+        }
+
+        /*  :where() similar to is but it has no especific*/
+        ul li:where(.f-element, .t-element){
+            color:#2a6
+        }
+
+        /* :has() is used to select an elemnet that contains other*/
+        section:has(label){
+            background-color:#efe
+        }
+    </style>
+</head>
+<body>
+    <h1>List</h1>
+    <ul>
+        <li class="f-element">first element</li>
+        <li class="s-element">second element</li>
+        <li class="t-element">third element</li>
+        <li class="f-element">fourth element</li>
+        <li class="f-element">fifth element</li>
+    </ul>
+
+    <section>
+        <label> Email
+            <input type="email">
+        </label>
+    </section>
+
+</body>
+</html>

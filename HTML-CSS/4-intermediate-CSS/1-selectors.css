@@ -28,6 +28,7 @@ h1 + p{
     color:#777
 }
 
+/* SELECTOR: all following sibling elements (not only adjacente) */
 h1 ~ p{
     color:#a59
 }

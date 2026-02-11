@@ -1,0 +1,53 @@
+<!DOCTYPE htmml>
+<html>
+    <head>
+        <title>Pseuso element</title>
+        <style>
+            h1::first-letter{
+                color:#009;
+                font-size:100px;
+                letter-spacing:-20px
+            }
+
+            p::first-line{
+                color:#900
+            }
+
+            h1::selection{
+                background-color:#a24;
+                color:#eee
+            }
+
+            li::marker{
+                color:#167
+            }
+
+            .text-before::before{
+                content: 'text-before ';
+                color: #390
+            }
+
+            .text-after::after{
+                content: ' text-after';
+                color: #390
+            }
+
+        </style>
+    </head>
+    <body>
+        <h1>First title</h1>
+
+        <ul>
+            <li class="text-before">first element</li>
+            <li>second element</li>
+            <li>third element</li>
+            <li>fourth element</li>
+            <li class="text-after">fiveth element</li>
+        </ul>
+
+        <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Atque excepturi, delectus, tenetur deleniti officiis nam harum voluptatum fugit beatae quaerat saepe nulla pariatur vero ipsum eligendi. In quasi corrupti ratione. 
+        </p>
+    </body>
+
+</html>

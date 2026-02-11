@@ -1,0 +1,28 @@
+
+.list{
+    border-radius: 5px;
+    width: 200px;
+    margin:40px 15px;
+    box-shadow: 0 0 10px 1px #1117;
+    background-color: #FAFAF0;
+    padding:5px
+}
+
+.list__item{
+    font-family: Tahoma, sans-serif;
+    font-size:20px;
+}
+
+.item--title{
+    text-align:center;
+    letter-spacing:1px;
+    font-size:25px
+}
+
+.item--important{
+    color:#3d0
+}
+
+.old--list{
+    opacity: 0.8;
+}

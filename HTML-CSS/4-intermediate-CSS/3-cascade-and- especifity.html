@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cascade and especifity</title>
+    <style>
+        h1{
+            color:#f0f;   /* (0, 0, 1) */
+        }
+        h1{
+            color:#0f0   /* (0, 0, 1) */
+        }
+        body > h1{
+            color:#00f   /* (0, 0, 2) */
+        }
+        .class-title{
+            color:#939   /* (0, 1, 0) */
+        }
+        #id-title{
+            color:#881   /* (1, 0, 0) */
+        }
+    </style>
+</head>
+<body>
+    <h1 class="class-title" id="id-title">Title</h1>
+</body>
+</html>
+
+<!-- CASCADE: decides which rule is applied when rules conflict -->
+<!-- ESPECIFY: importence score that decides which rule wins (has 3 values: 0, 0, 0) -->
+
+<!-- LEVEL OF IMPORTANCE
+1. word !important
+2. inline style
+3. stylesheet/code
+4. user/pluggins
+5. browser -->
