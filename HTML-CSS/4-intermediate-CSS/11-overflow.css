@@ -1,0 +1,63 @@
+:root{
+    font-family:Tahoma;
+}
+
+h1{
+    text-align:center;
+    font-size:60px;
+    margin:0;
+    letter-spacing:10px
+}
+
+.main-container{
+    height:205px;
+    margin:3% 20%;
+    position:relative;
+}
+
+.second-container{
+    width:300px;
+    display:inline-block;
+    position:absolute;
+    padding:0 10px;
+    box-shadow: 0 0 20px 5px #0003;
+    border-radius:5px;
+    height: 200px;
+    background-color: #FEFEFE
+}
+
+.second-container-rigth{
+    right:0
+}
+
+h2{
+    text-align:center;
+    letter-spacing:3px;
+    margin:10px
+}
+.p-container{
+    padding:0;
+    height: 130px
+}
+
+
+/* ======= OVERFLOW ===== */
+
+/* VISIBLE: default value, the content can overflow */
+
+
+/* HIDDEN: the content that is outside, is not see */
+.second-container-hidden{
+    overflow:hidden
+}
+
+
+/* SCROLL: a scroll bar is always (horizontal and/or vertical) */
+.p-container-scroll{
+    overflow:scroll
+}
+
+/* AUTO: if the content is bigger than its parent, a scroll bar appears  */
+.p-container-auto{
+    overflow:auto
+}

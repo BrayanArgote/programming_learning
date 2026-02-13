@@ -1,0 +1,282 @@
+html{
+    background-color: #000
+}
+
+.container{
+    border:2px dashed #fff;
+    width: 650px;
+    height: 650px;
+    position:relative;
+    margin:auto;
+    margin-top: 50px;
+    background-color: #0A0A0A;
+    border-radius:2px
+}
+
+.container__item{
+    width:100px;
+    height: 100px;
+    position:absolute;
+    opacity:0.6;
+    border-radius:2px
+}
+
+/* COLORS */
+.container__item--color--one{
+    background-color:#FF00FF;
+}
+
+.container__item--color--two{
+    background-color: #00E5FF;
+}
+
+.container__item--color--three{
+    background-color: #39FF14;
+}
+
+.container__item--color--four{
+    background-color: #F4FF00;
+}
+
+.container__item--color--five{
+    background-color: #FF5F1F;
+}
+
+.container__item--color--six{
+    background-color: #9D00FF;
+}
+
+.container__item--color--seven{
+    background-color: #00FFF0;
+}
+
+.container__item--color--eight{
+    background-color: #B6FF00;
+}
+
+.container__item--color--nine{
+    background-color: #FF1744;
+}
+
+.container__item--color--ten{
+    background-color: #2979FF;
+}
+
+
+/* SECTION ONE */
+.container__item--section--one-one{
+    top:20px;
+    left:20px
+}
+
+.container__item--section--one-two{
+    top:40px;
+    left:40px;
+}
+
+.container__item--section--one-three{
+    top:60px;
+    left:60px;
+}
+
+.container__item--section--one-four{
+    top:80px;
+    left:80px;
+}
+
+.container__item--section--one-five{
+    top:100px;
+    left:100px;
+}
+
+.container__item--section--one-six{
+    top:120px;
+    left:120px;
+}
+
+.container__item--section--one-seven{
+    top:140px;
+    left:140px;
+}
+
+.container__item--section--one-eight{
+    top:160px;
+    left:160px;
+}
+
+.container__item--section--one-nine{
+    top:180px;
+    left:180px;
+}
+
+.container__item--section--one-ten{
+    top:200px;
+    left:200px;
+}
+
+
+
+/* SECTION TWO */
+.container__item--section--two-one{
+    top:20px;
+    right:20px
+}
+
+.container__item--section--two-two{
+    top:40px;
+    right:40px;
+}
+
+.container__item--section--two-three{
+    top:60px;
+    right:60px;
+}
+
+.container__item--section--two-four{
+    top:80px;
+    right:80px;
+}
+
+.container__item--section--two-five{
+    top:100px;
+    right:100px
+}
+
+.container__item--section--two-six{
+    top:120px;
+    right:120px;
+}
+
+.container__item--section--two-seven{
+    top:140px;
+    right:140px;
+}
+
+.container__item--section--two-eight{
+    top:160px;
+    right:160px;
+}
+
+.container__item--section--two-nine{
+    top:180px;
+    right:180px;
+}
+
+.container__item--section--two-ten{
+    top:200px;
+    right:200px;
+}
+
+
+/* SECTION THREE */
+.container__item--section--three-one{
+    bottom:20px;
+    left:20px
+}
+
+.container__item--section--three-two{
+    bottom:40px;
+    left:40px;
+}
+
+.container__item--section--three-three{
+    bottom:60px;
+    left:60px;
+}
+
+.container__item--section--three-four{
+    bottom:80px;
+    left:80px;
+}
+
+.container__item--section--three-five{
+    bottom:100px;
+    left:100px
+}
+
+.container__item--section--three-six{
+    bottom:120px;
+    left:120px;
+}
+
+.container__item--section--three-seven{
+    bottom:140px;
+    left:140px;
+}
+
+.container__item--section--three-eight{
+    bottom:160px;
+    left:160px;
+}
+
+.container__item--section--three-nine{
+    bottom:180px;
+    left:180px;
+}
+
+.container__item--section--three-ten{
+    bottom:200px;
+    left:200px;
+}
+
+
+/* SECTION FOUR */
+.container__item--section--four-one{
+    bottom:20px;
+    right:20px
+}
+
+.container__item--section--four-two{
+    bottom:40px;
+    right:40px;
+}
+
+.container__item--section--four-three{
+    bottom:60px;
+    right:60px;
+}
+
+.container__item--section--four-four{
+    bottom:80px;
+    right:80px;
+}
+
+.container__item--section--four-five{
+    bottom:100px;
+    right:100px
+}
+
+.container__item--section--four-six{
+    bottom:120px;
+    right:120px;
+}
+
+.container__item--section--four-seven{
+    bottom:140px;
+    right:140px;
+}
+
+.container__item--section--four-eight{
+    bottom:160px;
+    right:160px;
+}
+
+.container__item--section--four-nine{
+    bottom:180px;
+    right:180px;
+}
+
+.container__item--section--four-ten{
+    bottom:200px;
+    right: 200px;
+}
+
+
+
+
+
+
+
+
+
+

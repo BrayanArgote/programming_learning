@@ -1,0 +1,33 @@
+body{
+    margin:0;
+    font-family:tahoma;
+    background:linear-gradient(#CCC, #000 )
+}
+
+.header{
+    background-color: #48E;
+    color: #EEE;
+    letter-spacing: 3px
+}
+
+.header__title{
+    margin:0 25px;
+    padding:20px 0;
+    font-size:70px;
+}
+
+.content__item{
+    margin:20px;
+    font-size:30px
+}
+
+.window-alert{
+    width:200px;
+    background-color: #DEDEDE;
+    padding: 0 15px;
+    border-radius:3px;
+    position:fixed;
+    top:35%;
+    right:5%;
+    box-shadow:0 0 20px 10px #0004
+}

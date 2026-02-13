@@ -1,0 +1,39 @@
+body{
+    margin: 0;
+    font-family: Tahoma;
+}
+
+.modal{
+    background-color: #0009;
+    width:100vw;
+    height: 100vh;
+}
+
+.modal__content{
+    position:relative;
+    background-color: #EEE;
+    padding: 10px 20px;
+    width:40%;
+    margin:auto;
+    margin-top: 50px;
+}
+
+.modal__title{
+    margin-top:10px;
+}
+
+.modal__btn-close{
+    top:0;
+    right:0;
+    color: #EEE;
+    background-color: #000;
+    width:30px;
+    height:25px;
+    text-align:center;
+    position:absolute
+}
+
+.p-background{
+    margin:0;
+    padding:20px
+}

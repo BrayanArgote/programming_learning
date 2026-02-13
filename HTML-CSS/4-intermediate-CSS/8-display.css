@@ -1,5 +1,6 @@
 body{
-    margin:0
+    margin:0;
+    font-family:Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .menu{
@@ -12,7 +13,6 @@ body{
     color: #eee;
     display:inline-block;
     padding: 8px 15px;
-    font-family:Tahoma, Geneva, Verdana, sans-serif;
     font-weight: bolder;
     text-decoration:none;
 }
@@ -33,4 +33,28 @@ body{
     color: #EEE;
     background-color: #48E;
     border: 2px solid #EEE
+}
+
+
+p{
+    display:inline;
+    background-color:red;
+}
+
+.g{
+    background-color:green
+}
+
+.btn-google{
+    display:block;
+    text-decoration:none;
+    padding:20px;
+    width:200px;
+    margin-left:15px;
+    background-color: #48E;
+    font-size:30px;
+    font-weight:900;
+    color:#EEE;
+    border-radius:4px;
+    box-shadow: 0 0 20px 5px #0003
 }

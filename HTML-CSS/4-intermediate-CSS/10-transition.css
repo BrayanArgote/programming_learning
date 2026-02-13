@@ -1,0 +1,56 @@
+.box{
+    width:200px;
+    height:200px; 
+    display: inline-block;
+    margin:20px;
+    border-radius:10px;
+    line-height:200px;
+}
+
+h2{
+    font-family:tahoma;
+    text-align:center;
+    margin: 0;
+}
+
+
+.box--form{
+    background-color: #48E;
+    transition-property: border-radius;
+    transition-duration:4s;
+    border-radius:none
+}
+
+.box--form:hover{
+    border-radius:100%;
+}
+
+
+.box--color{
+    background-color: #EEAA44;
+    transition-property:background-color, color, border;
+    transition-duration: 0.7s;
+    box-sizing:border-box;
+}
+
+.box--color:hover{
+    background-color: transparent;
+    color: #EEAA44;
+    border: 10px solid #EEAA44
+}
+
+
+.box--letter{
+    background-color: #EE5544;
+    transition-property: color, font-size, font-trans, text-transform, letter-spacing;
+    box-sizing: border-box;
+    transition-duration: 2s;
+}
+
+.box--letter:hover{
+    color: #EEE;
+    font-size:23px;
+    text-transform:uppercase;
+    letter-spacing: 2px;
+    box-sizing: border-box;
+}

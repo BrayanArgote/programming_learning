@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text flow control</title>
+
+    <style>
+
+        :root{
+            font-family:Tahoma;
+            background-color: #FEFEFE
+        }
+
+        /* For titles: balance  */
+        h1{
+            text-wrap:balance;
+        }
+
+        /* For paragraphs: pretty (but vsc or brave does not reconize it)*/
+        p{
+            text-wrap: pretty;
+        }
+
+        div{
+            width:200px;
+            margin:auto;
+            border: 1px dashed #000;
+            padding: 15px;
+
+            /* to see the three points at the end */
+            white-space:nowrap;
+            text-overflow:ellipsis;
+            overflow:hidden
+        }
+
+    </style>
+
+</head>
+<body>
+    
+    <h1>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit, quae nulla. Non assumenda, sit amet.</h1>
+
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sit iusto in neque, eaque sint enim maiores, totam aspernatur omnis delectus consectetur ratione facilis magnam voluptas dolores? Veniam quibusdam quas voluptatibus. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorum velit cumque repellendus exercitationem rerum natus vel, libero, ullam fugiat animi placeat tenetur officia similique tempora vero a dignissimos dolore iusto.</p>
+
+    <div>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Placeat error eligendi et, veniam iste quia veritatis? Molestias, quia quas possimus facere error, eum quaerat sunt voluptas officiis repellat at! Facilis.
+    </div>
+</body>
+</html>
+
+
+

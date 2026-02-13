@@ -1,0 +1,92 @@
+.container{
+    border:1px dashed #000;
+    border-radius:1px;
+    height:450px;
+}
+
+.container__item{
+    border-radius:20%;
+    height:100px;
+    width:100px;
+    position:relative;
+    opacity:0.9
+}
+
+
+.container__item--first{
+    background-color:#1B263B;
+    bottom:-250px;
+    left:25px;
+}
+
+.container__item--second{
+    background-color:#778DA9;
+    bottom:-175px;
+    left:50px;
+}
+
+.container__item--thirdth{
+    background-color:#C77DFF;
+    bottom:-100px;
+    left:75px;
+}
+
+.container__item--fourth{
+    background-color: #FFAFCC;
+    bottom:-25px;
+    left:100px;
+}
+
+
+.container__item--fifth{
+    background-color:#0D1B2A;
+    bottom:300px;
+    left:200px
+}
+
+.container__item--sixth{
+    background-color:#415A77;
+    bottom:375px;
+    left:225px;
+}
+
+.container__item--seventh{
+    background-color:#9D4EDD;
+    bottom:450px;
+    left:250px;
+}
+
+.container__item--eighth{
+    background-color:#E0AAFF;
+    bottom:525px;
+    left:275px;
+}
+
+
+.container__item--ninth{
+    background-color:#415A77;
+    bottom:780px;
+    left:500px;
+}
+
+.container__item--tenth{
+    background-color:#9D4EDD;
+    bottom:855px;
+    left:475px;
+    z-index:-1
+}
+
+.container__item--eleventh{
+    background-color:#E0AAFF;
+    bottom:920px;
+    left:450px;
+    z-index:-2
+}
+
+.container__item--twelfth{
+    background-color:#FF8FAB;
+    bottom:995px;
+    left:425px;
+    z-index:-3
+}
+
