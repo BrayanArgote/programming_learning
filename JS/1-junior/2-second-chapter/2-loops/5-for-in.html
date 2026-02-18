@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>For In Loop</title>
+</head>
+<body>
+    
+    <script>
+
+        let colors = ["yellow", "green", "brown", "black", "white", "red", "pink"]
+
+        let numberColor = prompt("Enter the number of the color that you want to know");
+
+        if (numberColor > colors.length - 1 || numberColor < 0){
+            alert(`Color with the number ${numberColor} does not exist`)
+        }
+
+        else{
+        for(let color in colors){
+                if (color == numberColor){
+                    alert(colors[color]);
+                    break;
+                }
+            }
+        }
+
+    </script>
+
+</body>
+</html>

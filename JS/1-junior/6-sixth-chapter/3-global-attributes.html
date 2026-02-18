@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Global Atributes</title>
+</head>
+<body>
+    
+    <p id="p-test">Lorem ipsum dolor sit.</p>
+    <p id="p-hide">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsam assumenda officia quo aperiam dicta. Debitis odit iste deleniti totam obcaecati? Quos enim ex magnam voluptates illo repellat id iure assumenda?</p>
+    <h2 id="h-title">Subtile</h2>
+
+    <script>
+
+        const p_test = document.getElementById("p-test");
+
+        // if the user can edit the element (contentEditable)
+        p_test.setAttribute("contentEditable", "true")
+
+        // hide or show the element
+        const p_hide = document.getElementById("p-hide");
+        p_hide.setAttribute("hidden", "")
+
+        //
+        const h_title = document.getElementById("h-title");
+        h_title.setAttribute("title", "it's only a h2")
+
+
+        // THERE ARE MANY GLOBAL ATTRIBUTES
+    </script>
+
+</body>
+</html>

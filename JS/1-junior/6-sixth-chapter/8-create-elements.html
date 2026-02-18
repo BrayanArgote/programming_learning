@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Elements</title>
+</head>
+<body>
+    
+
+    <ul class="contenedor"></ul>
+
+    <script>
+
+        const contenedor = document.querySelector(".contenedor");
+
+        // a way to add text inside of a element
+        const item1 = document.createElement("li");
+        const text = document.createTextNode("first form");
+        item1.appendChild(text);
+        contenedor.appendChild(item1);
+
+        // other way to add text inside of a element
+        const item2 = document.createElement("li");
+        item2.textContent = "second form";
+        contenedor.appendChild(item2);
+
+        // a way to add several elements
+        const fragment = document.createDocumentFragment();
+        for (let f = 1; f <= 5; f ++ ){
+            const itemFragment = document.createElement("li");
+            itemFragment.textContent = `item fragment ${f}`;
+            fragment.appendChild(itemFragment);
+        }
+        contenedor.appendChild(fragment);
+
+    </script>
+
+</body>
+</html>

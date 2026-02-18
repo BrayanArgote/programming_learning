@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Child Methods</title>
+</head>
+<body>
+    
+    <ul class="ul">
+        <li>first item</li>
+        <li>second item</li>
+        <li>third item</li>
+        <li id="fourthLi" >fourth item</li>
+    </ul>
+
+    <script>
+
+    const ul = document.querySelector(".ul");
+
+    // add a new child at the end   (.appendChild())
+    const newLi = document.createElement("li");
+    newLi.textContent = "fifth element (new li from js)";
+    ul.appendChild(newLi);
+
+    // remove a child   (.removeChild())
+    ul.removeChild(ul.firstElementChild);
+
+    // replace a child   (.replaceChild())
+    const fourthLi = document.getElementById("fourthLi");
+    const newFourthLi = document.createElement("li");
+    newFourthLi.textContent = "New Fourth Li";
+    ul.replaceChild(newFourthLi, fourthLi);
+
+    // check if there are children
+    let answer = ul.hasChildNodes();
+    if(answer){
+        document.writeln("There are children");
+    }
+    else{
+        document.writeln("There are no children")
+    }
+
+    </script>    
+
+</body>
+</html>

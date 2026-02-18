@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Getting and Modifying Children</title>
+</head>
+<body>
+    
+    <div id="div">
+        <h1>Title</h1>
+        <h2>Subtitle</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+    </div>
+    
+    <script>
+
+    const div = document.getElementById("div");
+
+    // return the first, the latest or all children, can be a text
+    console.log(div.firstChild);
+    console.log(div.lastChild);
+    console.log(div.childNodes);
+
+    // return the first, the latest or all children elements HTML
+    console.log(div.firstElementChild);
+    console.log(div.lastElementChild);
+    console.log(div.children);
+
+    </script>
+
+</body>
+</html>

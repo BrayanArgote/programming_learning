@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arrow Function</title>
+</head>
+<body>
+    
+    <script>
+
+        const sum = (n1, n2) =>{
+            return n1 + n2;
+        }
+
+        // shorter, return is included
+        const shortSum = (n1, n2) => n1 + n2;
+
+        n1 = Number(prompt("Enter the first number"));
+        n2 = Number(prompt("Enter the second number"));
+
+        alert(`The sum result is: ${sum(n1, n2)}`)
+        alert(`The shortSum result is: ${shortSum(n1, n2)}`)
+    </script>
+
+</body>
+</html>

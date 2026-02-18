@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Get element</title>
+</head>
+<body>
+    
+    <p id="p1" class="paragraph">Lorem <span style="color: #F44">ipsum</span> dolor sit.</p>
+
+    <script>
+
+        const p = document.getElementById("p1");
+
+        // get the text of the element
+        alert("Only Text Content \n" + p.textContent)
+
+        // get only the inner content
+        alert("Inside Content \n" + p.innerHTML)
+
+        // get the whole element
+        alert("All Content \n" + p.outerHTML)
+    </script>
+
+</body>
+</html>

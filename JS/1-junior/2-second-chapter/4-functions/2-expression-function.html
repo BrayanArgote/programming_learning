@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fuction Expression</title>
+</head>
+<body>
+    
+    <script>
+
+        const IsEven = function(number){
+            if( number % 2 == 0){
+                return true;
+            }
+            return false
+        }
+
+        let number = prompt("Enter a number");
+        let result = IsEven(number);
+
+        alert(`Is ${number} an even number? ${ result? "YES" : "NO"}`)
+
+    </script>
+</body>
+</html>
