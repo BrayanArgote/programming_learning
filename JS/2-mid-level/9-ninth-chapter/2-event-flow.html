@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events Flow</title>
+    <style>
+        .div-blue{
+            margin: 30px 100px;
+            background-color: #48E;
+            padding:30px;
+        }
+
+        .div-red{
+            baCKground-color: #E54;
+            padding: 20px
+        }
+        button{
+            padding: 15px;
+            border-radius: 3px;
+            border: none;
+            font-size: 15px;
+            font-weight: 900;
+            letter-spacing: 1px
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="div-blue">
+        <div class="div-red">
+            <button id="btn">Click</button>
+        </div>
+    </div>
+
+    <script>
+
+        const div_blue = document.querySelector(".div-blue");
+        div_blue.addEventListener("click", function(){
+            alert("Click from the div-blue");
+        })//,true) // capturing: first the parent element (normally the specific elements go first, then the parent elements)
+
+        const div_red = document.querySelector(".div-red");
+        div_red.addEventListener("click", function(){
+            alert("Click from the div-red")
+        })
+
+        const btn = document.getElementById("btn");
+        btn.addEventListener("click", function(event){
+            event.stopPropagation();            // prevents other elements from receiving the click
+            alert("Click from the bottom")
+        })
+
+    </script>
+
+</body>
+</html>

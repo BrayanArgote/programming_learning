@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Timers</title>
+</head>
+<body>
+    
+    <script>
+
+        // execute after n seconds
+        setTimeout(function(){
+            document.write("js")
+        }, 2000)
+
+        // execute every n seconds
+        setInterval(function(){
+            document.write("JS")
+        }, 3000)
+
+        // if i want to stop
+        
+        // first keep it in a const
+        const setTime = setTimeout(function(){
+            alert("js")
+        }, 2000);
+
+        clearTimeout(setTime);
+
+        clearInterval(name);
+
+    </script>
+    
+</body>
+</html>

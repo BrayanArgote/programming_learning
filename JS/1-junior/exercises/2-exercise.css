@@ -1,0 +1,15 @@
+.container-person{
+    width: 140px;
+    border-radius: 5px;
+    color: #EEE;
+    background-color: #48E;
+    font-family: tahoma;
+    padding: 5px;
+    font-size: 10px;
+    margin: 10px;
+    display:inline-block
+}
+
+.green{
+    background-color: #8E4
+}

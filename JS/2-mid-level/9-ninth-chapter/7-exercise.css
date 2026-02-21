@@ -1,0 +1,62 @@
+body{
+    background-color: #000;
+    font-family: tahoma
+}
+
+form{
+    width: 350px;
+    padding: 20px;
+    background-color: #047;
+    margin: auto;
+    margin-top: 30px;
+    border-radius: 4px 
+}
+
+h2{
+    color: #FFF;
+    font-size: 30px;
+    margin-top: 0
+}
+
+
+input{
+    display: block;
+    width: 95%;
+    margin: 5% 0;
+    padding: 8px;
+    background-color: transparent;
+    border: none;
+    border-bottom: 2px solid #48E;
+    color: #48E;
+    outline: none
+}
+
+input:hover{
+    background-color: #58E;
+    color: #EEE
+}
+
+#btn-send{
+    background-color: #48E;
+    border-radius: 2px;
+    width: 40%;
+    color: #EEE;
+    font-size: 18px;
+    letter-spacing: 2px
+}
+
+#btn-send:hover{
+    outline: 2px solid #EEE;
+    background-color: #047
+}
+
+
+.green{
+    color: green
+}
+
+.red{
+    color: red
+}
+
+

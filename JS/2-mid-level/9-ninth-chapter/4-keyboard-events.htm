@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Keyboard Events</title>
+
+    <style>
+
+        div{
+            background-color: #48E;
+            color: #EEE;
+            border-radius: 3px;
+            width: 100px;
+            display: inline-block;
+            margin: 20px;
+            text-align:center;
+            padding: 20px;
+            font-family: tahoma;
+            font-size: 50px;
+        }
+
+    </style>
+
+</head>
+<body>
+    
+    <div id="div0" tabindex="0">A</div>
+    <div id="div1" tabindex="0">B</div>
+
+<script>
+
+        const div0 = document.getElementById("div0");
+        div0.addEventListener("keydown", function(event){
+            if(event.key == "a" || event.key == "A"){
+                alert("You have press the letter a")
+            };
+        })
+
+        const div1 = document.getElementById("div1");
+        div1.addEventListener("keyup", function(){
+            alert("You pressed a key")
+        })
+
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Promise</title>
+</head>
+<body>
+    <script>
+
+        const persons = [
+            {
+                name: "jose",
+                age: 21
+            },
+            {
+                name: "juan",
+                age: 26
+            },
+            {
+                name: "javier",
+                age: 29
+            }
+        ]
+
+        function searchPerson(index){
+            return new Promise(function(resolve, reject){
+                if(index < 0 || index >= persons.length){
+                    reject("Invalid index")
+                }
+                else{
+                    resolve(persons[index])
+                }
+            })
+        }
+
+        let index = Number(prompt("Enter a number"));
+
+        searchPerson(index)
+        .then(function (person){
+            console.log(person)
+        })
+        .catch(function (error){
+            console.log("Error: " + error)
+        })
+
+    </script>
+</body>
+</html>

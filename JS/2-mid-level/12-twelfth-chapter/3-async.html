@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Async</title>
+</head>
+<body>
+    <script>
+
+        const colors = ["yellow", "green", "brown", "purple"];
+
+        function searchColor(color){
+            return new Promise(function(resolve, reject){
+                for(let c of colors){
+                    if(c == color){
+                        resolve(true)
+                    }
+                }
+                resolve(false)
+            })
+        }
+
+        async function showAnswer(color){
+            color = color.toLowerCase();
+            const a = await searchColor(color);
+            console.log(a? `The color ${color} exists` : `The color ${color} does not exists`);
+        }
+
+        showAnswer("yeLloW");
+    </script>
+</body>
+</html>

@@ -8,12 +8,20 @@
 <body>
     
     <div>
-        <h1>Title</h1>
-        <h2>Subtitle</h2>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-        <h3>Subtitle</h3>
+        <h1 class="one">Title</h1>
+        <h2 class="two">Subtitle</h2>
+        <p id="three">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        <h3 class="Four">Subtitle</h3>
     </div>
 
+    <script>
+
+        const three = document.getElementById("three");
+
+        console.log(three.nextElementSibling);
+        console.log(three.previousElementSibling);
+
+    </script>
 
 </body>
 </html>

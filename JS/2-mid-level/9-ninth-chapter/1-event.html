@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events</title>
+    <style>
+        button{
+            margin: 40px;
+            padding: 10px;
+            background-color: #48E;
+            color: #EEE;
+            font-weight: 900;
+            font-size: 20px;
+            letter-spacing: 2px;
+            border-radius: 4px;
+            border: none;
+            display: inline-block
+        }
+    </style>
+
+</head>
+<body>
+
+    <button id="btn">Click0</button>
+    <button style="background-color: #8E4" id="btn1">Click1</button>
+
+    <script>
+
+        const btn = document.getElementById("btn");
+
+        btn.addEventListener("click", function(){
+            alert("You clicked 0");
+        })
+
+
+        const btn1 = document.getElementById("btn1");
+
+        function handleClick(){
+            alert("You clicked 1")
+        }
+
+        btn1.addEventListener("click", handleClick)
+
+
+    </script>
+    
+</body>
+</html>

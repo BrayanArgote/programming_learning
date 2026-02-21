@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mouse Events</title>
+
+    <style>
+
+        button{
+            padding: 10px;
+            border-radius: 3px;
+            margin: 20px;
+            font-family: tahoma;
+            font-size: 15px;
+            font-weight: 900;
+        }
+
+    </style>
+
+</head>
+<body>
+
+    <button id="btn0">Click</button>
+    <button id="btn1">Doule Click</button>
+    <button id="btn2">Mouse Over</button>
+    <button id="btn3">Mouse Out</button>
+
+    <script>
+
+        function handleClick(){
+            alert("Something")
+        };
+
+        const btn0 = document.getElementById("btn0");
+        btn0.addEventListener("click", handleClick);
+
+        const btn1 = document.getElementById("btn1");
+        btn1.addEventListener("dblclick", handleClick);
+
+        const btn2 = document.getElementById("btn2");
+        btn2.addEventListener("mouseover", handleClick);
+
+        const btn3 = document.getElementById("btn3");
+        btn2.addEventListener("mouseout", handleClick);
+
+        // THERE ARE TOO MANY
+
+    </script>
+
+</body>
+</html>

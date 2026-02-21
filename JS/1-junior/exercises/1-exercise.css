@@ -1,0 +1,6 @@
+.flex-item{
+    border: 1px solid #000;
+    display: inline-block;
+    width: 225px;
+    margin: 20px
+}
