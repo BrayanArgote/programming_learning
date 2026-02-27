@@ -19,7 +19,7 @@ namespace _4_exercise.Repository
             try
             {
                 connection = cn.OpenConnection();
-                string sql = "SELECT * FROM students;";
+                string sql = "SELECT id, name, age, subject FROM students;";
 
                 SqlCommand command = new SqlCommand(sql, connection);
                 SqlDataReader reader = command.ExecuteReader();
@@ -30,7 +30,8 @@ namespace _4_exercise.Repository
                     {
                         Id = Convert.ToInt32(reader["Id"]),
                         Name = reader["name"].ToString(),
-                        Age = Convert.ToInt32(reader["age"])
+                        Age = Convert.ToInt32(reader["age"]),
+                        Subject = reader["subject"].ToString()
                     });
                 }
                 reader.Close();
@@ -60,13 +61,7 @@ namespace _4_exercise.Repository
 
                 SqlDataReader reader = command.ExecuteReader();
 
-                if (!reader.HasRows)
-                {
-                    reader.Close();
-                    return studentFind;
-                }
-
-                while (reader.Read())
+                if(reader.Read())
                 {
                     studentFind = new Student();
                     studentFind.Id = Convert.ToInt32(reader["id"]);
@@ -76,6 +71,7 @@ namespace _4_exercise.Repository
                 }
                 reader.Close();
                 return studentFind;
+                
             }
             catch (Exception ERROR) {
                 Console.WriteLine("Error: " + ERROR);
@@ -84,9 +80,103 @@ namespace _4_exercise.Repository
             finally{
                 if(connection != null)
                 {
-                    connection.Close();
+                    cn.CloseConnection();
                 }
             }
+        }
+
+        public int AddStudent(string name, int age, string subject)
+        {
+            SqlConnection connection = null;
+
+            try
+            {
+                connection = cn.OpenConnection();
+                string sql = "INSERT INTO students (name, age, subject) VALUES (@name, @age, @subject)";
+
+                SqlCommand command = new SqlCommand(sql, connection);
+                command.Parameters.AddWithValue("@name", name);
+                command.Parameters.AddWithValue("@age", age);
+                command.Parameters.AddWithValue("@subject", subject);
+
+                int rowsAffected = command.ExecuteNonQuery();
+
+                return rowsAffected;
+
+            }
+            catch(Exception ERROR)
+            {
+                Console.WriteLine("ERROR: " + ERROR);
+                return 0;
+            }
+            finally
+            {
+                if (connection != null) {
+                    cn.CloseConnection();
+                }
+            }
+        }
+
+        public int DeleteStudent(int id)
+        {
+            SqlConnection connection = null;
+
+            try
+            {
+                connection = cn.OpenConnection();
+                string sql = "DELETE FROM students WHERE id = @id";
+                SqlCommand command = new SqlCommand(sql, connection);
+                command.Parameters.AddWithValue("@id", id);
+
+                int rowsAffected = command.ExecuteNonQuery();
+
+                return rowsAffected;
+
+            }catch(Exception ERROR)
+            {
+                Console.WriteLine("ERROR: " + ERROR);
+                return 0;
+            }
+            finally
+            {
+                if(connection != null)
+                {
+                    cn.CloseConnection();
+                }
+            }
+        }
+
+        public int UpdateStudent(string name, int age, string subject, int id)
+        {
+            SqlConnection connection = null;
+
+            try
+            {
+                connection = cn.OpenConnection();
+                string sql = "UPDATE students SET name = @name, age = @age, subject = @subject WHERE id = @id";
+
+                SqlCommand command = new SqlCommand(sql, connection);
+                command.Parameters.AddWithValue("@name", name);
+                command.Parameters.AddWithValue("@age", age);
+                command.Parameters.AddWithValue("@subject", subject);
+                command.Parameters.AddWithValue("@id", id);
+
+                int rowsAffected = command.ExecuteNonQuery();
+
+                return rowsAffected;
+            }
+            catch (Exception ERROR) {
+                Console.WriteLine("ERROR: " + ERROR);
+                return 0;
+            }
+            finally
+            {
+                if(connection != null)
+                {
+                    cn.CloseConnection();
+                }
+            }
+
         }
     }
 }

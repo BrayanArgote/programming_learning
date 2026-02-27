@@ -5,7 +5,9 @@ body{
 
 nav{
     background-color: #8E4;
-    height: 70px;
+    color: #EEE;
+    padding: 1px 10px;
+    letter-spacing: 2px
 }
 
 .div-container{
@@ -24,7 +26,7 @@ button{
     font-weight: 700;
 }
 
-#btn-add1, .btn-add{
+#btn-add1{
     background-color: #4C8F22;
     transition: transform 0.2s;
 }
@@ -51,13 +53,13 @@ input:focus{
 }
 
 table{
-    margin: auto;
+    margin: 10px auto;
     width: 500px;
-    margin-top: 10px;
     border-radius: 4px;
     padding: 10px;
     border-spacing: 0;
     box-shadow: 0 0 35px 10px #1112;
+    text-align: center;
 }
 
 th{
@@ -72,7 +74,6 @@ td{
 
 .btn-delete{
     background-color: #E54;
-    margin-left: 30px
 }
 
 .btn-delete:hover{
@@ -81,13 +82,23 @@ td{
     outline: 2px solid #E54;
 }
 
+.btn-update{
+    background-color: #48E;
+}
+
+.btn-update:hover{
+    color: #48E;
+    background-color: #EEE;
+    outline: 2px solid #48E;
+}
+
 form label, form input{
     display: block
 }
 
 form{
     margin: 10% 22% ;
-    width: 200px;
+    width: 175px;
     padding: 10px;
     position: absolute;
     display: block;
@@ -98,7 +109,15 @@ form{
     display: none
 }
 
+#form-update-student{
+    position: absolute;
+    top: 6%;
+    right: 1%;
+    width: 190px;
+}
+
 h2{
+    text-align: center;
     margin-top: 0;
 }
 
@@ -111,6 +130,14 @@ label{
 
 .btns-form{
     margin-top: 20px
+}
+
+.btn-confirm{
+    background-color: #8E4
+}
+
+.btn-confirm:hover{
+    background-color: #4C8F22;
 }
 
 .btn-cancel{

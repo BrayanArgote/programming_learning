@@ -23,7 +23,7 @@ namespace _4_exercise.Connection
             }
             catch (Exception ERROR)
             {
-                Console.WriteLine("Error: " + ERROR);
+                Console.WriteLine("ERROR: " + ERROR);
             }
             return connection;
         }

@@ -7,45 +7,67 @@
     <link rel="stylesheet" href="2-fetch.css">
 </head>
 <body>
-    <nav></nav>
+    <nav>
+        <h1>CRUD students</h1>
+    </nav>
 
     <form id="form-add-student">
         <h2>Add Student</h2>
         <label>Name
-            <input type="text">
+            <input id="input-name" type="text">
         </label>
         <label>Age
-            <input type="number">
+            <input id="input-age" type="number">
         </label>
         <label>Subject
-            <input type>
+            <input id="input-subject" type="text">
         </label>
         <div class="btns-form">
-            <button class="btn-add">Add</button>
+            <button class="btn-confirm">Add</button>
             <button class="btn-cancel" type="button">Cancel</button>
         </div>
     </form>
 
-    <table>
-        <div class="div-container">
+    <div class="div-container">
             <button id="btn-add1">Add</button>
             <div class="div-middle">
-                <input placeholder="Search by name">
+                <input id="input-search" placeholder="Search by name">
                 <button id="btn-search">Search</button>
             </div>
         </div>
+    <table>
         <thead>
             <tr>
                 <th>Id</th>
                 <th>Name</th>
                 <th>Age</th>
                 <th>Subject</th>
-                <th>Delete</th>
+                <th>Actions</th>
             </tr>
         </thead>
         <tbody id="tbody">
         </tbody>
     </table>
+
+    <form id="form-update-student">
+        <h2>Update Student</h2>
+        <label>Id
+            <input readonly id="id-update">
+        </label>
+        <label>Name
+            <input id="name-update" type="text">
+        </label>
+        <label>Age
+            <input id="age-update" type="number">
+        </label>
+        <label>Subject
+            <input id="subject-update" type="text">
+        </label>
+        <div class="btns-form">
+            <button id="btn-update" class="btn-confirm">Update</button>
+            <button class="btn-cancel" type="button">Cancel</button>
+        </div>
+    </form>
 
     <script src="2-fetch.js"></script>
 </body>
