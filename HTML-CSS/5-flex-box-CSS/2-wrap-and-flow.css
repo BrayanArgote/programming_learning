@@ -1,0 +1,31 @@
+body{
+    font-family:Tahoma;
+    margin:0
+}
+
+.flex-box__item:nth-child(2n){
+    background-color: #88EE44
+}
+
+
+/* FLEX-WRAP: all elements in one row/column or in defferent columns/rows (it adapts to size).
+    + NOWRAP: default value (all in one row or column).
+    + WRAP: elemenst in several columns or rows (they adapts) */
+.flex-box{
+    margin:3%;
+    display: flex;
+    border: 1px dashed #0006;
+    width: 500px;
+    flex-wrap: wrap
+}
+
+.flex-box__item{
+    width:100px;
+    height: 100px;
+    color: #EEE;
+    background-color: #AA44EE;
+    margin: 20px;
+    border-radius: 5px;
+    text-align: center;
+    line-height: 100px
+}
