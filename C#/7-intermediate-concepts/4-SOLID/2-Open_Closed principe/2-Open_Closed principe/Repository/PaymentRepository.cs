@@ -11,7 +11,8 @@ namespace _2_Open_Closed_principe.Repository
     public class PaymentRepository
     {
         public AppDbContext _appDbContext;
-        public PaymentRepository(AppDbContext appDbContext ) {
+        public PaymentRepository(AppDbContext appDbContext)
+        {
             _appDbContext = appDbContext;
         }
 
@@ -19,10 +20,12 @@ namespace _2_Open_Closed_principe.Repository
         {
             return _appDbContext.Payment
                 .Include(q => q.User)
+                .Include(q => q.PaymentMethod)
                 .ToList();
         }
 
-        public string MakePayment(int UserId, decimal amountEntered, string method){
+        public string MakePayment(int UserId, decimal amountEntered, string method)
+        {
             var response = new SqlParameter("@Response", System.Data.SqlDbType.Decimal)
             {
                 Direction = System.Data.ParameterDirection.Output
@@ -41,14 +44,16 @@ namespace _2_Open_Closed_principe.Repository
                 response,
                 responseCode);
 
-            var re = responseCode.Value();
-
-            if (responseCode.Value == 400)
+            if (responseCode.Value == "404")
             {
-
+                return"*** User was not found ***";
             }
+            else if(responseCode.Value == "400")
+            {
+                return "*** You don't have sufficient balance or the amount entered is invalid ***";
+            }
+            return "--- Sucessfully ---";
         }
 
-
-    
+    }
 }
