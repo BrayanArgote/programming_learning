@@ -11,7 +11,7 @@ namespace _2_Open_Closed_principe.Repository
 {
     public class UserRepository
     {
-        public readonly AppDbContext _appDbContext;
+        private readonly AppDbContext _appDbContext;
         public UserRepository(AppDbContext appDbContext)
         {
             _appDbContext = appDbContext;
@@ -38,12 +38,18 @@ namespace _2_Open_Closed_principe.Repository
             return query.ToList();
         }
 
-        public User GetUserById(int id)
+        public User GetById(int id)
         {
             return _appDbContext.User.FirstOrDefault(q => q.UserId == id);
         }
 
-
+        public decimal GetDebt(int id)
+        {
+            return _appDbContext.User
+                .Where(q => q.UserId == id)
+                .Select(q => q.Debt)
+                .First();
+        }
         public List<PaymentMethod> GetPaymentMethodsUser(int id)
         {
             var query = from pm in _appDbContext.PaymentMethod
@@ -54,10 +60,9 @@ namespace _2_Open_Closed_principe.Repository
                             PaymentMethodId = pm.PaymentMethodId,
                             Type = pm.Type
                         };
-                        
+
             return query.ToList();
         }
-        
 
     }
 }

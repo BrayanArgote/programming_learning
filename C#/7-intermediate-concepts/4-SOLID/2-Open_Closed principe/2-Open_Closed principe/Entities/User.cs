@@ -9,9 +9,9 @@ namespace _2_Open_Closed_principe.Entities
     public class User
     {
         [Key]
-        public int UserId { get; set; } 
-        public string FullName { get; set; }  
-        public decimal Balance { get; set; } 
+        public int UserId { get; set; }
+        public string FullName { get; set; }
+        public decimal Balance { get; set; }
         public decimal Debt { get; set; }
 
     }

@@ -10,7 +10,7 @@ namespace _2_Open_Closed_principe.Repository
 {
     public class PaymentRepository
     {
-        public AppDbContext _appDbContext;
+        private readonly AppDbContext _appDbContext;
         public PaymentRepository(AppDbContext appDbContext)
         {
             _appDbContext = appDbContext;
@@ -24,7 +24,7 @@ namespace _2_Open_Closed_principe.Repository
                 .ToList();
         }
 
-        public string MakePayment(int UserId, decimal amountEntered, string method)
+        public string MakePayment(int UserId, decimal amountEntered, int methodId)
         {
             var response = new SqlParameter("@Response", System.Data.SqlDbType.Decimal)
             {
@@ -40,19 +40,20 @@ namespace _2_Open_Closed_principe.Repository
                 "EXEC sp_ProcessPayment @UserId, @AmountEntered, @Method, @Response OUTPUT, @ResponseCode OUTPUT",
                 new SqlParameter("@UserId", UserId),
                 new SqlParameter("@AmountEntered", amountEntered),
-                new SqlParameter("@Method", method),
+                new SqlParameter("@Method", methodId),
                 response,
                 responseCode);
 
-            if (responseCode.Value == "404")
+            switch (responseCode.Value)
             {
-                return"*** User was not found ***";
+                case 201: return $"--- Payment Successful ---\nChange: {response.Value}";
+                case 202: return $"--- Payment Successful ---\nOutStanding balance: {response.Value}";
+                case 400: return "*** You don't have sufficient balance or the amount entered is invalid ***";
+                case 404: return "*** User was not found ***"; ;
+                default: return "ERROR";
             }
-            else if(responseCode.Value == "400")
-            {
-                return "*** You don't have sufficient balance or the amount entered is invalid ***";
-            }
-            return "--- Sucessfully ---";
+            ;
+
         }
 
     }
