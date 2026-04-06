@@ -18,12 +18,6 @@ namespace _3_Liskov_Substitution_Priciple.DTO
         }
     }
 
-
-    public class NotificationRequestSms : NotificationRequest
-    {
-        public NotificationRequestSms(int notificationChannelId, string sender, string recipient, string content) : base (notificationChannelId, sender, recipient, content) { }
-    }
-
     public class NotificationRequestEmail : NotificationRequest
     {
         public string Subject { get; set; }

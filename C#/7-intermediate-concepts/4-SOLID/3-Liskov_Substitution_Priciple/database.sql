@@ -27,8 +27,8 @@ CREATE TABLE NotificationLog(
 
 INSERT INTO NotificationChannel(Type)
     VALUES
-    (EMAIL),
-    (SMS);
+    ('EMAIL'),
+    ('SMS');
 GO
 
 INSERT INTO NotificationLog (NotificationChannelId, Sender, Recipient, Content)

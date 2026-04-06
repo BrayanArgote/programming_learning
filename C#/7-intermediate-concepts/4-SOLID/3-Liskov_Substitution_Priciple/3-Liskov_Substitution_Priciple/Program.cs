@@ -98,7 +98,7 @@ public class Program
                             Thread.Sleep(3000);
 
                             notifierEmail.Send(new NotificationRequestEmail(methodId, sender, recipient, content, subject));
-                            resultExecuteMethod = notifierSms.Send(new NotificationRequestSms(methodId, sender, recipient, content)) == true ? messageNotificationSend : messageNotificationNotSend;
+                            resultExecuteMethod = notifierSms.Send(new NotificationRequestEmail(methodId, sender, recipient, content, subject)) == true ? messageNotificationSend : messageNotificationNotSend;
                             Console.WriteLine(resultExecuteMethod);
 
                             break;
@@ -115,12 +115,12 @@ public class Program
 
                             Console.Write("Enter the content: ");
                             content = Console.ReadLine();
-                            if (InputHasValidLength(recipient, senderAndRecipientLength) == "0") { Console.WriteLine(MessageEmptyLength(senderAndRecipientLength)); break; }
+                            if (InputHasValidLength(content, senderAndRecipientLength) == "0") { Console.WriteLine(MessageEmptyLength(senderAndRecipientLength)); break; }
 
                             Console.WriteLine("\n-- Sending notification... \n");
                             Thread.Sleep(3000);
 
-                            resultExecuteMethod = notifierSms.Send(new NotificationRequestSms(methodId, sender, recipient, content)) == true ? messageNotificationSend : messageNotificationNotSend;
+                            resultExecuteMethod = notifierSms.Send(new NotificationRequest(methodId, sender, recipient, content)) == true ? messageNotificationSend : messageNotificationNotSend;
                             Console.WriteLine(resultExecuteMethod);
                             break;
 

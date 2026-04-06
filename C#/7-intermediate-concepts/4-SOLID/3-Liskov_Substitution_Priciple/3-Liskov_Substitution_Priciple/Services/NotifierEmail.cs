@@ -8,7 +8,6 @@ namespace _3_Liskov_Substitution_Priciple.Services
 {
     public class NotifierEmail : Notifier
     {
-        private readonly NotificationLogRepository _notificationLogRepository;
         public NotifierEmail(NotificationLogRepository notificacionLogRepository) : base(notificacionLogRepository) { }
     
         public override bool Send(NotificationRequest data)
@@ -16,7 +15,7 @@ namespace _3_Liskov_Substitution_Priciple.Services
             var dataEmail = (NotificationRequestEmail)data;
             bool subjectIsValid = !string.IsNullOrEmpty(dataEmail.Subject);
 
-            data.Content = $"SUBJECT: {dataEmail.Subject} --- CONTENT: {dataEmail.Content}";
+            data.Content = $"SUBJECT: {dataEmail.Subject} --- CONTENT: {dataEmail.Content}";  // This is wrong, a DTO can not be modified
 
             bool flag = base.Send(data) && subjectIsValid;
 
