@@ -10,7 +10,6 @@
 
 
 -- METACHARACTES: rules-syntax, not literal text
-
 - . = any character (except a line break)
 - ^ = start of text
 - $ = end of text
@@ -42,12 +41,29 @@
 
 
 -- ANCHORS 
-- ^
-- $
+- ^ = start of the text
+- $ = end of the text
 - \b = word boundary
 
 
--- GROUP AND ALTERNATION
-- (pattern) = save the patters in a group
-- (?:pattern) = group but don't save
+-- GROUPS AND ALTERNATION
+- (pattern) = capture the patters in a group
+- (?:pattern) = create a group but don't capture it
 
+-- BACKREFERENCES
+- \1 = first capture group
+- \2 = second capture group
+
+
+-- LOOKAHEAD AND LOOKBEHIND
+- ...(?=...) = must be followed by ...
+- ...(?!...) = must not be followed by ...
+- ...(?<=...) = must be preceded by ...
+- ...(?<!...) = must not be preceded by ... 
+
+
+-- FLAGS
+- i = case-insensitive (RegexOptions.IgnoreCase)
+- g = global (in JS. in C# no)
+- m = multiline (RegexOptions.Multiline)
+- s = Dot matches all (includes line breaks)
